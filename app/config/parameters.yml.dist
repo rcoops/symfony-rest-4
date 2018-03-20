@@ -13,3 +13,4 @@ parameters:
     mailer_password: null
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
+    jwt_key_pass_phrase: ~

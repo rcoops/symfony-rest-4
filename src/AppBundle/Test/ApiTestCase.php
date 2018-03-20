@@ -364,4 +364,14 @@ class ApiTestCase extends KernelTestCase
         return $last['response'];
     }
 
+    protected function getAuthorizedHeaders($username, $headers = array())
+    {
+        $token = $this->getService('lexik_jwt_authentication.encoder')
+            ->encode(['username' => $username]);
+
+        $headers['Authorization'] = 'Bearer '.$token;
+
+        return $headers;
+    }
+
 }

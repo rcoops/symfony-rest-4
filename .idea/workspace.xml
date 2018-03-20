@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f45d5145-994c-4be8-a959-c62826947c3b" name="Default" comment="" />
+    <list default="true" id="f45d5145-994c-4be8-a959-c62826947c3b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Api/TokenController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Security/JwtTokenAuthenticator.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony-rest-4.iml" afterPath="$PROJECT_DIR$/.idea/symfony-rest-4.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+      <change beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/Api/ProgrammerController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/Api/ProgrammerController.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Test/ApiTestCase.php" afterPath="$PROJECT_DIR$/src/AppBundle/Test/ApiTestCase.php" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,58 +41,124 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="test" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="ProgrammerControllerTest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-306">
-                  <caret line="238" column="28" lean-forward="false" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#49#80#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ProgrammerControllerTest.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="TokenControllerTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgrammerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Api/ProgrammerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Api/TokenController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+              <folding>
+                <element signature="e#124#164#0#PHP" expanded="true" />
+                <element signature="e#830#846#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgrammerControllerTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="346" column="0" lean-forward="true" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiTestCase.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Test/ApiTestCase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="374" column="5" lean-forward="false" selection-start-line="374" selection-start-column="5" selection-end-line="374" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JwtTokenAuthenticator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/JwtTokenAuthenticator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <element signature="e#38#69#0#PHP" expanded="true" />
+                <element signature="e#2119#2135#1#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>test404</find>
+      <find>post</find>
+      <find>$this-&gt;client</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/config/config_test.yml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a7cc14ec-e829-4f43-a1d8-c32a478813a9/console.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Api/TokenController.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Security/JwtTokenAuthenticator.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Test/ApiTestCase.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/Api/ProgrammerController.php" />
+        <option value="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" />
       </list>
     </option>
   </component>
@@ -85,6 +169,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
@@ -164,6 +251,8 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
       <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -210,6 +299,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -237,6 +327,17 @@
             <path>
               <item name="symfony-rest-4" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony-rest-4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="symfony-rest-4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -250,14 +351,6 @@
               <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfony-rest-4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -265,7 +358,6 @@
               <item name="symfony-rest-4" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -305,8 +397,10 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/phpunit.xml.dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../finish-4" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="SearchEverywhereHistoryKey" value="sec&#9;FILE&#9;file:///home/rick/PhpstormProjects/symfony-rest-4/app/config/security.yml&#10;serv&#9;FILE&#9;file:///home/rick/PhpstormProjects/symfony-rest-4/app/config/services.yml&#10;PC&#9;null&#9;null" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -321,30 +415,35 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.tests">
-    <configuration name="ProgrammerControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="AppBundle\Tests\Controller\Api\ProgrammerControllerTest" file="$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php" scope="Class" />
+    <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\AppBundle\Controller\Api\ProgrammerControllerTest" file="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" method="testPOSTProgrammerWorks" scope="Method" />
     </configuration>
-    <configuration name="ProgrammerControllerTest.test404Exception" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="AppBundle\Tests\Controller\Api\ProgrammerControllerTest" file="$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php" method="test404Exception" scope="Method" />
+    <configuration name="ProgrammerControllerTest.testRequiresAuthentication" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\AppBundle\Controller\Api\ProgrammerControllerTest" file="$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php" method="testRequiresAuthentication" scope="Method" />
     </configuration>
-    <configuration name="ProgrammerControllerTest.testPOSTProgrammer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="AppBundle\Tests\Controller\Api\ProgrammerControllerTest" file="$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php" method="testPOSTProgrammer" scope="Method" />
+    <configuration name="TokenControllerTest.testPOSTCreateToken" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\AppBundle\Controller\Api\TokenControllerTest" file="$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php" method="testPOSTCreateToken" scope="Method" />
+    </configuration>
+    <configuration name="TokenControllerTest.testPOSTCreateTokenInvalidCredentials" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\AppBundle\Controller\Api\TokenControllerTest" file="$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php" method="testPOSTCreateTokenInvalidCredentials" scope="Method" />
     </configuration>
     <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/tests" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.tests" />
-      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.test404Exception" />
-      <item index="3" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testPOSTProgrammer" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testRequiresAuthentication" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.TokenControllerTest.testPOSTCreateToken" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.TokenControllerTest.testPOSTCreateTokenInvalidCredentials" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testPOSTProgrammerWorks" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.tests" />
-        <item index="2" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testPOSTProgrammer" />
-        <item index="3" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.test404Exception" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.tests" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testPOSTProgrammerWorks" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.TokenControllerTest.testPOSTCreateTokenInvalidCredentials" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit.TokenControllerTest.testPOSTCreateToken" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.ProgrammerControllerTest.testRequiresAuthentication" />
       </list>
     </recent_temporary>
   </component>
@@ -361,65 +460,66 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521544859873</updated>
-      <workItem from="1521544860972" duration="1285000" />
+      <workItem from="1521544860972" duration="6069000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProgrammerControllerTest - 2018.03.20 at 11h 38m 39s.xml">
-      <configuration name="ProgrammerControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 10m 17s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest - 2018.03.20 at 11h 38m 57s.xml">
-      <configuration name="ProgrammerControllerTest" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 10m 24s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_(1) - 2018.03.20 at 11h 40m 56s.xml">
-      <configuration name="ProgrammerControllerTest (1)" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 10m 43s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_test404Exception - 2018.03.20 at 11h 36m 54s.xml">
-      <configuration name="ProgrammerControllerTest.test404Exception" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 11m 20s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_test404Exception - 2018.03.20 at 11h 37m 35s.xml">
-      <configuration name="ProgrammerControllerTest.test404Exception" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 12m 27s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_test404Exception - 2018.03.20 at 11h 37m 36s.xml">
-      <configuration name="ProgrammerControllerTest.test404Exception" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 12m 56s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_testPOSTProgrammer - 2018.03.20 at 11h 37m 48s.xml">
-      <configuration name="ProgrammerControllerTest.testPOSTProgrammer" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 13m 08s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_testPOSTProgrammer - 2018.03.20 at 11h 38m 08s.xml">
-      <configuration name="ProgrammerControllerTest.testPOSTProgrammer" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ProgrammerControllerTest_testPOSTProgrammerWorks - 2018.03.20 at 14h 13m 27s.xml">
+      <configuration name="ProgrammerControllerTest.testPOSTProgrammerWorks" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="ProgrammerControllerTest_testPOSTProgrammer - 2018.03.20 at 11h 38m 09s.xml">
-      <configuration name="ProgrammerControllerTest.testPOSTProgrammer" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="tests - 2018.03.20 at 14h 14m 55s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.03.20 at 11h 38m 20s.xml">
+    <history-entry file="tests - 2018.03.20 at 14h 18m 32s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1285000" />
+    <option name="totallyTimeSpent" value="6069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24847814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5019369" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330033" sideWeight="0.4980631" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24847814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5019369" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.4980631" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -432,7 +532,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -446,22 +549,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a7cc14ec-e829-4f43-a1d8-c32a478813a9/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -486,36 +573,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4212">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/Api/TokenControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/a5452e02/a7cc14ec-e829-4f43-a1d8-c32a478813a9/main.battle_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/a5452e02/a7cc14ec-e829-4f43-a1d8-c32a478813a9/main.battle_programmer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4806">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Api/TokenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="e#124#164#0#PHP" expanded="true" />
+            <element signature="e#830#846#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/JwtTokenAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#69#0#PHP" expanded="true" />
+            <element signature="e#2119#2135#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Test/ApiTestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="506">
+          <caret line="374" column="5" lean-forward="false" selection-start-line="374" selection-start-column="5" selection-end-line="374" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Controller/Api/ProgrammerControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/Api/ProgrammerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="238" column="28" lean-forward="false" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
-          <folding>
-            <element signature="e#49#80#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/AppBundle/Controller/Api/ProgrammerControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        <state relative-caret-position="402">
+          <caret line="346" column="0" lean-forward="true" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
           <folding />
         </state>
       </provider>
