@@ -23,4 +23,5 @@ class PaginatedCollection
     {
         $this->_links[$ref] = $url;
     }
+
 }

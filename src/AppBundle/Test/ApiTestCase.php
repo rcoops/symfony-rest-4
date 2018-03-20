@@ -20,6 +20,10 @@ use Symfony\Component\PropertyAccess\PropertyAccess;
 
 class ApiTestCase extends KernelTestCase
 {
+
+    /**
+     * @var Client
+     */
     private static $staticClient;
 
     /**
@@ -42,6 +46,9 @@ class ApiTestCase extends KernelTestCase
      */
     private $formatterHelper;
 
+    /**
+     * @var ResponseAsserter
+     */
     private $responseAsserter;
 
     public static function setUpBeforeClass()
@@ -89,6 +96,10 @@ class ApiTestCase extends KernelTestCase
         // purposefully not calling parent class, which shuts down the kernel
     }
 
+    /**
+     * @param Exception $e
+     * @throws Exception
+     */
     protected function onNotSuccessfulTest(Exception $e)
     {
         if ($lastResponse = $this->getLastResponse()) {
@@ -253,22 +264,13 @@ class ApiTestCase extends KernelTestCase
     }
 
     /**
-     * @return ResponseInterface
+     * @param string $username
+     * @param string $plainPassword
+     * @return User
+     * @throws \Doctrine\ORM\OptimisticLockException
+     * @throws \Doctrine\ORM\ORMException
      */
-    private function getLastResponse()
-    {
-        if (!self::$history || empty(self::$history)) {
-            return null;
-        }
-
-        $history = self::$history;
-
-        $last = array_pop($history);
-
-        return $last['response'];
-    }
-
-    protected function createUser($username, $plainPassword = 'foo')
+    protected function createUser( $username, $plainPassword = 'foo')
     {
         $user = new User();
         $user->setUsername($username);
@@ -277,13 +279,21 @@ class ApiTestCase extends KernelTestCase
             ->encodePassword($user, $plainPassword);
         $user->setPassword($password);
 
-        $em = $this->getEntityManager();
-        $em->persist($user);
-        $em->flush();
+        $this->getEntityManager()->persist($user);
+        $this->getEntityManager()->flush();
 
         return $user;
     }
 
+    /**
+     * @param array $data
+     * @return Programmer
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     * @throws \Throwable
+     * @throws \TypeError
+     */
     protected function createProgrammer(array $data)
     {
         $data = array_merge(array(
@@ -336,6 +346,22 @@ class ApiTestCase extends KernelTestCase
     protected function adjustUri($uri)
     {
         return '/app_test.php'.$uri;
+    }
+
+    /**
+     * @return ResponseInterface
+     */
+    private function getLastResponse()
+    {
+        if (!self::$history || empty(self::$history)) {
+            return null;
+        }
+
+        $history = self::$history;
+
+        $last = array_pop($history);
+
+        return $last['response'];
     }
 
 }

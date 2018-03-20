@@ -111,7 +111,7 @@ class ResponseAsserter extends \PHPUnit_Framework_Assert
      */
     public function assertResponsePropertyCount(ResponseInterface $response, $propertyPath, $expectedCount)
     {
-        $this->assertCount((int)$expectedCount, $this->readResponseProperty($response, $propertyPath));
+        $this->assertCount($expectedCount, $this->readResponseProperty($response, $propertyPath));
     }
 
     /**
@@ -177,4 +177,5 @@ class ResponseAsserter extends \PHPUnit_Framework_Assert
             ), 0, $e);
         }
     }
+
 }

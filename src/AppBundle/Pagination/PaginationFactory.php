@@ -17,6 +17,13 @@ class PaginationFactory
         $this->router = $router;
     }
 
+    /**
+     * @param QueryBuilder $qb
+     * @param Request $request
+     * @param string $route
+     * @param array $routeParams
+     * @return PaginatedCollection
+     */
     public function createCollection(QueryBuilder $qb, Request $request, $route, array $routeParams = array())
     {
         $page = $request->query->get('page', 1);
@@ -55,4 +62,5 @@ class PaginationFactory
 
         return $paginatedCollection;
     }
+
 }

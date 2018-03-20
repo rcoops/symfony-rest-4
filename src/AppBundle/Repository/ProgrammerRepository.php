@@ -18,8 +18,8 @@ class ProgrammerRepository extends EntityRepository
     }
 
     /**
-     * @param $nickname
-     * @return Programmer
+     * @param string $nickname
+     * @return Programmer|object
      */
     public function findOneByNickname($nickname)
     {
@@ -31,8 +31,11 @@ class ProgrammerRepository extends EntityRepository
         $qb = $this->createQueryBuilder('programmer');
 
         if ($filter) {
-            $qb->andWhere('programmer.nickname LIKE :filter OR programmer.tagLine LIKE :filter')
-                ->setParameter('filter', '%'.$filter.'%');
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    $qb->expr()->like('programmer.nickname', ':filter'),
+                    $qb->expr()->like('programmer.tagLine', ':filter'))
+            )->setParameter('filter', '%'.$filter.'%');
         }
 
         return $qb;

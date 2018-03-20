@@ -16,7 +16,7 @@ use AppBundle\Annotation\Link;
  * @Link(
  *  "self",
  *  route = "api_programmers_show",
- *  params = { "nickname": "object.getNickname()" }
+ *  params = {"nickname": "object.getNickname()"}
  * )
  */
 class Programmer
@@ -33,41 +33,44 @@ class Programmer
     /**
      * @var string
      *
-     * @ORM\Column(name="nickname", type="string", length=100, unique=true)
      * @Serializer\Expose
      * @Assert\NotBlank(message="Please enter a clever nickname")
+     * @ORM\Column(name="nickname", type="string", length=100, unique=true)
      */
     private $nickname;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="avatarNumber", type="integer")
      * @Serializer\Expose
+     * @ORM\Column(name="avatarNumber", type="integer")
      */
     private $avatarNumber;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tagLine", type="string", length=255, nullable=true)
      * @Serializer\Expose
+     * @ORM\Column(name="tagLine", type="string", length=255, nullable=true)
      */
     private $tagLine;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="powerLevel", type="integer")
      * @Serializer\Expose
+     * @ORM\Column(name="powerLevel", type="integer")
      */
     private $powerLevel = 0;
 
     /**
+     * @var User
+     *
+     * @Serializer\Expose()
+     * @Serializer\Groups({"deep"})
+     *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumn(nullable=false)
-     * @Serializer\Groups({"deep"})
-     * @Serializer\Expose()
      */
     private $user;
 
@@ -188,10 +191,11 @@ class Programmer
     }
 
     /**
-     * @param USer $user
+     * @param User $user
      */
     public function setUser(User $user)
     {
         $this->user = $user;
     }
+
 }

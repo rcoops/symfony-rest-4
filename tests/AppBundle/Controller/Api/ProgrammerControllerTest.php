@@ -6,6 +6,11 @@ use AppBundle\Test\ApiTestCase;
 
 class ProgrammerControllerTest extends ApiTestCase
 {
+
+    /**
+     * @throws \Doctrine\ORM\OptimisticLockException
+     * @throws \Doctrine\ORM\ORMException
+     */
     protected function setUp()
     {
         parent::setUp();

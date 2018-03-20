@@ -21,6 +21,9 @@ class ProgrammerController extends BaseController
     /**
      * @Route("/api/programmers")
      * @Method("POST")
+     * @param Request $request
+     * @throws ApiProblemException
+     * @return Response
      */
     public function newAction(Request $request)
     {
@@ -51,6 +54,8 @@ class ProgrammerController extends BaseController
     /**
      * @Route("/api/programmers/{nickname}", name="api_programmers_show")
      * @Method("GET")
+     * @param $nickname
+     * @return Response
      */
     public function showAction($nickname)
     {
@@ -65,7 +70,11 @@ class ProgrammerController extends BaseController
             ));
         }
 
-        $response = $this->createApiResponse($programmer, 200);
+        $response = $this->createApiResponse($programmer);
+        $location = $this->generateUrl('api_programmers_show', [
+            'nickname' => $programmer->getNickname(),
+        ]);
+        $response->headers->set('Location', $location);
 
         return $response;
     }
@@ -73,6 +82,8 @@ class ProgrammerController extends BaseController
     /**
      * @Route("/api/programmers", name="api_programmers_collection")
      * @Method("GET")
+     * @param Request $request
+     * @return Response
      */
     public function listAction(Request $request)
     {
@@ -84,14 +95,16 @@ class ProgrammerController extends BaseController
         $paginatedCollection = $this->get('pagination_factory')
             ->createCollection($qb, $request, 'api_programmers_collection');
 
-        $response = $this->createApiResponse($paginatedCollection, 200);
-
-        return $response;
+        return $this->createApiResponse($paginatedCollection);
     }
 
     /**
      * @Route("/api/programmers/{nickname}")
      * @Method({"PUT", "PATCH"})
+     * @param $nickname
+     * @param Request $request
+     * @throws ApiProblemException
+     * @return Response
      */
     public function updateAction($nickname, Request $request)
     {
@@ -117,14 +130,15 @@ class ProgrammerController extends BaseController
         $em->persist($programmer);
         $em->flush();
 
-        $response = $this->createApiResponse($programmer, 200);
-
-        return $response;
+        return $this->createApiResponse($programmer);
     }
 
     /**
      * @Route("/api/programmers/{nickname}")
      * @Method("DELETE")
+     * @param $nickname
+     *
+     * @return Response
      */
     public function deleteAction($nickname)
     {
@@ -141,13 +155,18 @@ class ProgrammerController extends BaseController
             $em->flush();
         }
 
-        return new Response(null, 204);
+        return $this->createApiResponse(null, 204);
     }
 
+    /**
+     * @param Request $request
+     * @param FormInterface $form
+     * @throws ApiProblemException
+     */
     private function processForm(Request $request, FormInterface $form)
     {
         $data = json_decode($request->getContent(), true);
-        if ($data === null) {
+        if (null === $data) {
             $apiProblem = new ApiProblem(400, ApiProblem::TYPE_INVALID_REQUEST_BODY_FORMAT);
 
             throw new ApiProblemException($apiProblem);
@@ -175,6 +194,10 @@ class ProgrammerController extends BaseController
         return $errors;
     }
 
+    /**
+     * @param FormInterface $form
+     * @throws ApiProblemException
+     */
     private function throwApiProblemValidationException(FormInterface $form)
     {
         $errors = $this->getErrorsFromForm($form);
@@ -187,4 +210,5 @@ class ProgrammerController extends BaseController
 
         throw new ApiProblemException($apiProblem);
     }
+    
 }

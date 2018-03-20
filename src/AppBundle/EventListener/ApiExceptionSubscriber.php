@@ -43,11 +43,7 @@ class ApiExceptionSubscriber implements EventSubscriberInterface
         if ($e instanceof ApiProblemException) {
             $apiProblem = $e->getApiProblem();
         } else {
-
-
-            $apiProblem = new ApiProblem(
-                $statusCode
-            );
+            $apiProblem = new ApiProblem($statusCode);
 
             /*
              * If it's an HttpException message (e.g. for 404, 403),

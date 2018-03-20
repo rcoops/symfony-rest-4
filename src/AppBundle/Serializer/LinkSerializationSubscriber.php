@@ -12,12 +12,27 @@ use Symfony\Component\Routing\RouterInterface;
 
 class LinkSerializationSubscriber implements EventSubscriberInterface
 {
+
+    /**
+     * @var RouterInterface
+     */
     private $router;
 
+    /**
+     * @var Reader
+     */
     private $annotationReader;
 
+    /**
+     * @var ExpressionLanguage
+     */
     private $expressionLanguage;
 
+    /**
+     * LinkSerializationSubscriber constructor.
+     * @param RouterInterface $router
+     * @param Reader $annotationReader
+     */
     public function __construct(RouterInterface $router, Reader $annotationReader)
     {
         $this->router = $router;
@@ -25,6 +40,9 @@ class LinkSerializationSubscriber implements EventSubscriberInterface
         $this->expressionLanguage = new ExpressionLanguage();
     }
 
+    /**
+     * @param ObjectEvent $event
+     */
     public function onPostSerialize(ObjectEvent $event)
     {
         /** @var JsonSerializationVisitor $visitor */
@@ -50,6 +68,11 @@ class LinkSerializationSubscriber implements EventSubscriberInterface
         }
     }
 
+    /**
+     * @param array $params
+     * @param $object
+     * @return array
+     */
     private function resolveParams(array $params, $object)
     {
         foreach ($params as $key => $param) {
@@ -60,6 +83,9 @@ class LinkSerializationSubscriber implements EventSubscriberInterface
         return $params;
     }
 
+    /**
+     * @return array
+     */
     public static function getSubscribedEvents()
     {
         return array(
@@ -70,4 +96,5 @@ class LinkSerializationSubscriber implements EventSubscriberInterface
             )
         );
     }
+
 }

@@ -6,6 +6,9 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ApiProblemException extends HttpException
 {
+    /**
+     * @var ApiProblem
+     */
     private $apiProblem;
 
     public function __construct(ApiProblem $apiProblem, \Exception $previous = null, array $headers = array(), $code = 0)
@@ -17,6 +20,9 @@ class ApiProblemException extends HttpException
         parent::__construct($statusCode, $message, $previous, $headers, $code);
     }
 
+    /**
+     * @return ApiProblem
+     */
     public function getApiProblem()
     {
         return $this->apiProblem;

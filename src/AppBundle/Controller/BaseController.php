@@ -112,6 +112,11 @@ abstract class BaseController extends Controller
             ->getRepository('AppBundle:ApiToken');
     }
 
+    /**
+     * @param $data
+     * @param int $statusCode
+     * @return Response
+     */
     protected function createApiResponse($data, $statusCode = 200)
     {
         $json = $this->serialize($data);
@@ -121,6 +126,11 @@ abstract class BaseController extends Controller
         ));
     }
 
+    /**
+     * @param $data
+     * @param string $format
+     * @return mixed|string
+     */
     protected function serialize($data, $format = 'json')
     {
         $context = new SerializationContext();
