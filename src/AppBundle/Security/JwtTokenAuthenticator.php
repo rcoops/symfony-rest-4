@@ -2,10 +2,16 @@
 
 namespace AppBundle\Security;
 
+use AppBundle\Api\ApiProblem;
+use AppBundle\Api\ApiProblemException;
+use AppBundle\Controller\Api\ResponseFactory;
 use Doctrine\ORM\EntityManager;
 use Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface;
+use Lexik\Bundle\JWTAuthenticationBundle\Exception\JWTDecodeFailureException;
 use Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\AuthorizationHeaderTokenExtractor;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Exception\CustomUserMessageAuthenticationException;
@@ -24,16 +30,21 @@ class JwtTokenAuthenticator extends AbstractGuardAuthenticator
      * @var EntityManager
      */
     private $em;
+    /**
+     * @var ResponseFactory
+     */
+    private $responseFactory;
 
     /**
      * JwtTokenAuthenticator constructor.
      * @param JWTEncoderInterface $jwtEncoder
      * @param EntityManager $em
      */
-    public function __construct(JWTEncoderInterface $jwtEncoder, EntityManager $em)
+    public function __construct(JWTEncoderInterface $jwtEncoder, EntityManager $em, ResponseFactory $responseFactory)
     {
         $this->jwtEncoder = $jwtEncoder;
         $this->em = $em;
+        $this->responseFactory = $responseFactory;
     }
 
     public function getCredentials(Request $request)
@@ -56,13 +67,12 @@ class JwtTokenAuthenticator extends AbstractGuardAuthenticator
      * @param mixed $credentials
      * @param UserProviderInterface $userProvider
      * @return \AppBundle\Entity\User[]|array|null|UserInterface
-     * @throws \Lexik\Bundle\JWTAuthenticationBundle\Exception\JWTDecodeFailureException
      */
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
-        $data = $this->jwtEncoder->decode($credentials);
-
-        if ($data === false) {
+        try {
+            $data = $this->jwtEncoder->decode($credentials);
+        } catch (JWTDecodeFailureException $e) {
             throw new CustomUserMessageAuthenticationException('Invalid token');
         }
 
@@ -80,7 +90,9 @@ class JwtTokenAuthenticator extends AbstractGuardAuthenticator
 
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)
     {
-        // TODO: Implement onAuthenticationFailure() method.
+        $apiProblem = new ApiProblem(401);
+        $apiProblem->set('detail', $exception->getMessageKey());
+        return $this->responseFactory->createResponse($apiProblem);
     }
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)
@@ -95,7 +107,11 @@ class JwtTokenAuthenticator extends AbstractGuardAuthenticator
 
     public function start(Request $request, AuthenticationException $authException = null)
     {
-        // TODO: Implement start() method.
+        $apiProblem = new ApiProblem(401);
+        $message = $authException ? $authException->getMessageKey() : 'Missing credentials';
+        $apiProblem->set('detail', $message);
+
+        throw new ApiProblemException($apiProblem);
     }
 
 }
